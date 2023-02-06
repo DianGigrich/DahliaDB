@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS dahlia_db;
+CREATE DATABASE dahlia_db;
