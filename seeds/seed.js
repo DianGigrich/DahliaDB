@@ -4,6 +4,7 @@ const seed = async () => {
     await sequelize.sync({ force: true })
     const users = [
         {
+            username: "Dian",
             email: "dian@dian.dian",
             password: "password"
         }
