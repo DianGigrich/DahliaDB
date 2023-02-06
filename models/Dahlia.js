@@ -4,7 +4,6 @@ const sequelize = require('../config/connection');
 class Dahlia extends Model {}
 
 Dahlia.init({
-    // add properites here, ex: Dahlia:
     name: {
          type: DataTypes.STRING,
          allowNull:false
