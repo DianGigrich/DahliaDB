@@ -1,26 +1,41 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Todo extends Model {}
+class Dahlia extends Model {}
 
-Todo.init({
-    // add properites here, ex: TODO:
-    task: {
+Dahlia.init({
+    // add properites here, ex: Dahlia:
+    name: {
          type: DataTypes.STRING,
          allowNull:false
     },
-    priority: {
+    primaryColor: {
          type: DataTypes.STRING,
          allowNull:false
     },
-    isComplete: {
+    secondaryColor: {
+        type: DataTypes.STRING,
+        allowNull:false
+   },
+   size: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        validate: {
+            isNumeric: true
+          }
+   },
+    have: {
          type: DataTypes.BOOLEAN,
-         defaultValue:false,
-         allowNull:false
-        
+         defaultValue:false
+    },
+    want: {
+        type: DataTypes.BOOLEAN,
+        defaultValue:false
     }
-},{
-    sequelize
-});
+}, {
+    sequelize,
+    timestamps: false,
+    underscored: true
+  });
 
-module.exports=Todo
+module.exports=Dahlia
