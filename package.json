@@ -1,0 +1,29 @@
+{
+  "name": "dahliadb",
+  "version": "1.0.0",
+  "description": "Dahlia tracker.\r My motivation was to help my husband keep track of his growing amounts of dahlias.\r In the future maybe I can make a retail website out of it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DianGigrich/DahliaDB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DianGigrich/DahliaDB/issues"
+  },
+  "homepage": "https://github.com/DianGigrich/DahliaDB#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mysql2": "^3.1.0",
+    "sequelize": "^6.28.0"
+  }
+}
