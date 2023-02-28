@@ -30,7 +30,11 @@ Dahlia.init({
     want: {
         type: DataTypes.BOOLEAN,
         defaultValue:false
-    }
+    },
+    image: { 
+     type: DataTypes.BLOB('long'), // <- type for image ( database :postgresql )
+     allowNull: true 
+   }
 }, {
     sequelize,
     timestamps: false,
